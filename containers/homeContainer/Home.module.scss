@@ -1,0 +1,196 @@
+.header {
+  background-color: #fb6469;
+  width: 100%;
+  height: 80px;
+  box-shadow: rgba(247, 70, 70, 0.2) 0px 7px 29px 0px;
+  //81d550
+  h1 {
+    margin: 0;
+    color: #fff;
+    font-weight: 400;
+    padding: 2.4rem;
+    height: 100%;
+    line-height: 100%;
+    span {
+      font-weight: 500;
+      font-size: 3rem;
+    }
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: 124rem;
+  padding: 6rem 0;
+  margin: auto;
+  font-family: "Poppins";
+  font-size: 1.6rem;
+  color: #556492;
+  .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logout_btn {
+      cursor: pointer;
+    }
+    a {
+      text-decoration: none;
+      font-style: italic;
+      padding: 1rem 1.6rem;
+      border-radius: 0.6rem;
+      font-size: 1.6rem;
+      transition: all 0.2s ease-in-out;
+      margin-right: 1.2rem;
+      color: #000;
+      &:hover {
+        transform: translateX(0.2rem);
+        color: rgb(255, 255, 255);
+        background-color: var(--background);
+        box-shadow: rgba(60, 157, 255, 0.2) 0px 0.8rem 2.4rem;
+      }
+    }
+    h1 {
+      flex: 1;
+      text-align: center;
+      padding: 1.6rem 4rem;
+    }
+    button {
+      border: none;
+      outline: none;
+      padding: 1rem 2rem;
+      background-color: #f5f5f5;
+      border-radius: 1rem;
+      cursor: pointer;
+      font-size: 1.2rem;
+      &:hover {
+        opacity: 0.7;
+      }
+    }
+  }
+
+  .list_book {
+    display: grid;
+    padding-top: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 4rem;
+    .item_book {
+      background-color: #fff;
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      padding: 2.2rem 3rem;
+      border-radius: 1rem;
+      width: 100%;
+      position: relative;
+      transition: all 0.2s ease-in-out;
+      &:hover {
+        transform: scale(1.1);
+      }
+      .item_book_header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h1 {
+          font-size: 1.8rem;
+          font-weight: 700;
+          margin: 0;
+          max-width: 180px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+        }
+        .item_book_circle {
+          position: absolute;
+          content: "";
+          width: 60px;
+          height: 60px;
+          background-color: red;
+          border-radius: 50%;
+          top: 8%;
+          right: 10%;
+          opacity: 0.05;
+        }
+        .item_book_wrapButton {
+          a {
+            text-decoration: none;
+            padding: 1rem;
+            color: #d77097;
+          }
+          button {
+            border: none;
+            outline: none;
+            padding: 1rem 2rem;
+            font-size: 1.4rem;
+            background-color: #ffaa71;
+            transition: all 0.2s ease-in-out;
+            color: #fff;
+            border-radius: 1rem;
+            cursor: pointer;
+            &:hover {
+              opacity: 0.7;
+            }
+          }
+        }
+      }
+      .item_book_author {
+        padding: 0.6rem 0 0 0.6rem;
+        font-size: 1.4rem;
+      }
+      .item_book_page {
+        padding: 2rem 0;
+        font-size: 3rem;
+        font-weight: 500;
+        color: #81d550;
+        span {
+          font-size: 1.6rem;
+          color: #556492;
+        }
+      }
+      .item_book_footer {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .item_book_type {
+          color: #c5c9d8;
+          margin-right: 1.2rem;
+        }
+        span {
+          color: #fb6469;
+        }
+      }
+    }
+  }
+
+  table {
+    width: 100%;
+    text-align: center;
+    th {
+      padding: 0;
+      height: 7rem;
+    }
+    .rows {
+      padding: 2rem;
+
+      &:hover {
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 0.8rem 2.4rem;
+        cursor: pointer;
+      }
+      a {
+        text-decoration: none;
+        padding: 1rem;
+        color: #d77097;
+      }
+      button {
+        border: none;
+        outline: none;
+        padding: 1rem 2rem;
+        font-size: 1.4rem;
+        background-color: #ffaa71;
+        color: #fff;
+        border-radius: 1rem;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+}

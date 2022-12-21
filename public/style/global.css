@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --background: #FFCEAE;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+@font-face {
+        font-family: 'Open Sans', sans-serif;
+    src: url('/fonts/Open Sans-Regular.ttf') format('truetype');
+}
+
+@layer base {
+    html {
+            font-size: 62.5%;
+           font-family: 'Open Sans', sans-serif;
+            color: #000;
+            line-height: 1.5;
+            box-sizing: border-box;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        body, h1,p {
+            margin: 0;
+        }
+}
